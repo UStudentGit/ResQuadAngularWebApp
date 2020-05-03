@@ -1,0 +1,77 @@
+.header{
+  display: flex;
+  margin: 0 0 0 0;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background:linear-gradient(#486DC5,#375495);
+}
+.header .logo{
+  display: flex;
+  flex-direction: row;
+}
+.header .logo>a >img{
+  width: 5em;
+  height: 5em;
+  margin: 1em 1em 1em 1em;
+  -webkit-filter: drop-shadow(5px 5px 5px white);
+  filter: drop-shadow(3px 3px 5px white);
+}
+.header .logo >h1{
+  font-size: 2em;
+  color: white;
+  margin: 1em;
+  text-align: justify;
+  align-self: center;
+  text-shadow: 3px 3px 5px black;
+}
+.account {
+  display: inline;
+  align-self: center;
+  margin-right: 3em;
+  position:relative;
+}
+.account .account-content{
+  max-width: 12em;
+  display: none;
+  align-self: center;
+  margin-top: 0.5em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  background: transparent;
+  border-radius: 0.5em;
+  min-width: 160px;
+  z-index: 2;
+}
+.account:hover .account-content{
+  display: flex;
+  transition: 0.5s;
+  flex-direction: row;
+}
+.account >button{
+  background: transparent;
+  border: none;
+}
+.account button>img{
+  height: 2em;
+  -webkit-filter: drop-shadow(3px 3px 3px black);
+filter: drop-shadow(2px 2px 2px black);
+}
+.account-content>button{
+  padding:0.5em;
+  margin:0.2em;
+  background: #375495;
+  border: none;
+  color: white;
+  font-size: 1em;
+  box-shadow:3px 3px 3px rgba(0,0,0,0.2);
+}
+.account-content>a{
+  padding:0.5em;
+  margin:0.2em;
+  background: #375495;
+  border: none;
+  color: white;
+  font-size: 1em;
+  box-shadow:3px 3px 3px rgba(0,0,0,0.2);
+  text-decoration: none;
+}

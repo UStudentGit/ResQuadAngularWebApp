@@ -1,0 +1,26 @@
+<div class="content">
+  <div class="container-fluid">
+    <div class="row align-items-center" style="height: 100%;">
+        <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3  col-xl-4 offset-xl-4 loginForm">
+            <div class="logo">
+                <img src="../../assets/logo.png" alt="LOGO"/>
+            </div>
+            <form method="POST">
+                <div class="emailBox">
+                    <label>Pass your email:</label>
+                    <input id="email" type="email" placeholder="email">
+                </div>
+                <div class="passwordBox">
+                    <label>Pass your password:</label>
+                    <input type="password" placeholder="password">
+                    <br>
+                </div>
+
+                <input id="submit" type="submit" value="Log in">
+            </form>
+            <button id="registerButton" (click)="toRegister()">Register</button>
+        </div>
+    </div>
+  </div>
+</div>
+
