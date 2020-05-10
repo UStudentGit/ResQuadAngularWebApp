@@ -14,6 +14,7 @@ import { MenuSelectionComponent } from './main-panel/home/menu-selection/menu-se
 import { TableComponent } from './main-panel/home/table/table.component';
 import { HomeComponent } from './main-panel/home/home.component';
 import { JoinToEventComponent } from './main-panel/join-to-event/join-to-event.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,14 +27,15 @@ import { JoinToEventComponent } from './main-panel/join-to-event/join-to-event.c
     MenuSelectionComponent,
     TableComponent,
     HomeComponent,
-    JoinToEventComponent
+    JoinToEventComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
