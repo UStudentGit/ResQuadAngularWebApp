@@ -5,18 +5,18 @@
             <div class="logo">
                 <img src="../../assets/logo.png" alt="LOGO"/>
             </div>
-            <form method="POST">
+            <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
                 <div class="emailBox">
                     <label>Pass your email:</label>
-                    <input id="email" type="email" placeholder="email">
+                    <input id="email" formControlName="email" type="email" placeholder="email">
                 </div>
                 <div class="passwordBox">
                     <label>Pass your password:</label>
-                    <input type="password" placeholder="password">
+                    <input formControlName="password" type="password" placeholder="password">
                     <br>
                 </div>
 
-                <input id="submit" type="submit" value="Log in">
+                <input id="submit" type="submit" value="Log in" [disabled]="loading">
             </form>
             <button id="registerButton" (click)="toRegister()">Register</button>
         </div>
