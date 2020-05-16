@@ -8,19 +8,19 @@
         <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
           <div class="personalBox">
             <label>Pass your email:</label>
-            <input id="email" formControlName="email" type="email" placeholder="email">
+            <input id="email" formControlName="email" type="email" placeholder="email" required>
           </div>
           <div class="personalBox">
             <label>Pass your name:</label>
-            <input id="name" formControlName="name" placeholder="name">
+            <input id="name" formControlName="name" placeholder="name" required>
           </div>
           <div class="personalBox">
             <label>Pass your surname:</label>
-            <input id="surname" formControlName="surname" placeholder="surname">
+            <input id="surname" formControlName="surname" placeholder="surname" required>
           </div>
           <div class="passwordBox">
             <label>Pass your password:</label>
-            <input formControlName="password" type="password" placeholder="password">
+            <input formControlName="password" type="password" placeholder="password" required>
           </div>
 
           <input id="submit" type="submit" value="Register" [disabled]="loading">

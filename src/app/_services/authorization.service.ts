@@ -30,5 +30,9 @@ export class AuthorizationService {
     return this.http.post(this.apiUrl + '/register', { email: Email, name: Name, surname: Surname, password: Password });
   }
 
+  logout() {
+    localStorage.removeItem('token');
+  }
+
 }
 

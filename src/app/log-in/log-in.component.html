@@ -8,11 +8,11 @@
             <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
                 <div class="emailBox">
                     <label>Pass your email:</label>
-                    <input id="email" formControlName="email" type="email" placeholder="email">
+                    <input id="email" formControlName="email" type="email" placeholder="email" required>
                 </div>
                 <div class="passwordBox">
                     <label>Pass your password:</label>
-                    <input formControlName="password" type="password" placeholder="password">
+                    <input formControlName="password" type="password" placeholder="password" required>
                     <br>
                 </div>
 
