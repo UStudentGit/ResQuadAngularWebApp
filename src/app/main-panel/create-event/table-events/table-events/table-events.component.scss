@@ -1,0 +1,106 @@
+.table-events {
+    text-align: center;
+    width: 50rem;
+    height: 40rem;
+    background: white;
+    border: 0.1em;
+    border-style: solid;
+    border-radius: 1em;
+    border-color: #969696;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.384);   
+}
+
+table {
+    margin: auto auto;
+    margin-top: 2rem;
+}
+
+th {
+     font-size: 1.4rem;
+     padding-right: 3rem;
+     padding-left: 3rem;
+     font-weight: 400;
+     padding-bottom: 1rem;
+     border-bottom: solid 1px rgb(179, 179, 179);
+     
+ }
+
+ .btn {
+     color:rgb(226, 0, 0);
+     &:hover {
+        background: rgb(201, 201, 201);
+        
+      }
+     
+ }
+
+ td {
+     font-size: 1.1rem;
+     border-bottom: solid 1px rgb(179, 179, 179);
+     padding-top: 0.5em;
+     padding-bottom: 0.5em;
+ }
+
+.checkboxes {
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    background: white;
+ }
+
+ #btn-del-event {
+    justify-self: center;
+    line-height: 2em;
+    width: inherit;
+    color: white;
+    background: #486dc5;
+    border-color: #1e3cff;
+    border-style: solid;
+    border: 0.2em;
+    border-radius: 0.8em;
+    font-size: 1rem;
+    margin-top: 0.3em;
+    margin-bottom: 1.5em;
+    margin-left: 3em;
+    padding: 0.3em;
+    height: 3em;
+    min-width: 12em;
+    &:hover {
+        background: rgb(69, 93, 150);
+        
+      }
+ }
+ #btn-add-event {
+    justify-self: center;
+    line-height: 2em;
+    width: inherit;
+    color: white;
+    background: #486dc5;
+    border-color: #1e3cff;
+    border-style: solid;
+    border: 0.2em;
+    border-radius: 0.8em;
+    font-size: 1rem;
+    margin-top: 0.3em;
+    margin-bottom: 1.5em;
+    margin-left: 20em;
+    padding: 0.3em;
+    height: 3em;
+    min-width: 12em;
+    &:hover {
+        background: rgb(69, 93, 150);
+       
+      }
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%; 
+}
+
+
+
+
+
+
+
