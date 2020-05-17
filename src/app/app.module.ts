@@ -17,7 +17,7 @@ import { TableComponent } from './main-panel/home/table/table.component';
 import { HomeComponent } from './main-panel/home/home.component';
 import { JoinToEventComponent } from './main-panel/join-to-event/join-to-event.component';
 import { AddTokenInterceptor } from './_services/add-token.interceptor';
-
+import { TableEventsComponent } from './main-panel/create-event/table-events/table-events/table-events.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +31,7 @@ import { AddTokenInterceptor } from './_services/add-token.interceptor';
     TableComponent,
     HomeComponent,
     JoinToEventComponent,
+    TableEventsComponent,
   ],
   imports: [
     BrowserModule,
