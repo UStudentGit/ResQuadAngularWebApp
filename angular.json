@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "ResQuad"
+  "defaultProject": "ResQuad",
+  "cli": {
+    "analytics": "e415866d-d3af-4ddb-96ec-81a19bde0714"
+  }
 }

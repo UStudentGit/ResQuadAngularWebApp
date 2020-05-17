@@ -38,5 +38,8 @@ export class SignUpComponent implements OnInit {
       this.loading = false;
     });
   }
+  toLogin(): void {
+    this.router.navigate(['/logIn']);
+  }
 
 }

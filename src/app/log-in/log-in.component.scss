@@ -3,7 +3,7 @@
 @mixin box {
     display: flex;
     flex-direction: column;
-    border-radius: 2px;
+    border-radius: 5px;
 
     label {
         margin-bottom: 2px;
@@ -18,7 +18,9 @@
     input {
         background: rgba(250, 250, 250, 0.9);
         border: none;
-        padding: 3px;
+        border-radius: 5px;
+        padding: 5px;
+        height: 2.5em;
 
         @media #{$xs} {
             padding: 2px;
@@ -30,8 +32,9 @@
     color: white;
     background: rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(250, 250, 250, 0.4);
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 3px;
+  height: 2.5em;
 
     &:hover {
         color: black;
@@ -47,7 +50,7 @@
 
 .content {
     overflow: hidden;
-    background: $background;
+    background:linear-gradient(#486DC5,#375495);
     width: 100vw;
     height: 100vh;
 
@@ -57,15 +60,16 @@
 
 
         .loginForm {
-            height: 85%;
-            background: rgba(250, 250, 250, 0.8);
+            height: 60%;
+            max-width: 35em;
+            background: transparent linear-gradient(#e8e8e8, #ababab);
             display: flex;
             flex-direction: column;
             align-items: center;
-            border-radius: 2px;
+            border-radius: 10px;
 
                 .logo {
-                    height: 30%;
+                    height: auto;
                     margin-top: 10%;
                     margin-bottom: 10%;
                     display: flex;
@@ -78,7 +82,7 @@
                 }
 
                 form {
-                    height: 55%;
+                    height: 30%;
                     width: 80%;
                     display: flex;
                     flex-direction: column;
