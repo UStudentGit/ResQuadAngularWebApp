@@ -6,6 +6,8 @@ import { LogInComponent } from './log-in/log-in.component';
 import { CreateEventComponent } from './main-panel/create-event/create-event.component';
 import { HomeComponent } from './main-panel/home/home.component';
 import { JoinToEventComponent } from './main-panel/join-to-event/join-to-event.component';
+import { AddEventComponent } from './main-panel/add-event/add-event.component';
+
 
 
 const routes: Routes = [
@@ -14,7 +16,8 @@ const routes: Routes = [
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
       { path: 'createEvent', component: CreateEventComponent },
-      { path: 'joinToEvent', component: JoinToEventComponent }
+      { path: 'joinToEvent', component: JoinToEventComponent },
+      { path: 'addEvent', component: AddEventComponent }
     ] },
   { path: 'signUp', component: SignUpComponent },
   { path: 'logIn', component: LogInComponent },

@@ -1,0 +1,29 @@
+<div class="table-events">
+    <div id ="form">
+        <h1><strong>Dodaj wydarzenie</strong></h1><br>
+        <form method="POST" action="#">
+            <label for="name">Nazwa:</label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="category">Kategoria:</label> <br>
+            <select name="category" id="category"><br>
+                <option value="kategoria1">Kategoria1</option>
+                <option value="kategoria2">Kategoria1</option>
+                <option value="kategoria3">Kategoria1</option>
+                <option value="kategoria4">Kategoria1</option>
+            </select><br>
+
+            <label for="group">Grupa użytkownika:</label><br>
+            <select name="group" id="group"><br>
+                <option value="grupa1">Grupa1</option>
+                <option value="grupa2">Grupa2</option>
+                <option value="grupa3">Grupa3</option>
+                <option value="grupa4">Grupa4</option>
+            </select><br>
+        
+            <br>
+            <input id = "btn-add-event" type="submit" value="Dodaj">
+        </form>
+        <a (click)="toReturn()"> Powrót </a>
+    </div> 
+</div>

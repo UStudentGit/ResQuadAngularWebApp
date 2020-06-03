@@ -1,0 +1,64 @@
+.table-events {
+    text-align: center;
+    width: 50rem;
+    height: 40rem;
+    background: white;
+    border: 0.1em;
+    border-style: solid;
+    border-radius: 1em;
+    border-color: #969696;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.384);   
+}
+h1,label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#form{
+    
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+    
+}
+label{
+    font-size: medium;
+}
+input, select{
+    margin-bottom: 30px;
+}
+
+select, #name{
+    height: 2.5em;
+    width: 40%;
+}
+
+#btn-add-event {
+    justify-self: center;
+    line-height: 1.5em;
+    width: inherit;
+    color: white;
+    background: #486dc5;
+    border-color: #1e3cff;
+    border-style: solid;
+    border: 0.2em;
+    border-radius: 0.8em;
+    font-size: 1rem;
+    margin-top: 0.3em;
+    margin-bottom: 1.5em;
+    padding: 0.3em;
+    height: 3em;
+    min-width: 12em;
+    &:hover {
+        background: rgb(69, 93, 150);
+       
+      }
+}
+
+a{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+

@@ -18,6 +18,8 @@ import { HomeComponent } from './main-panel/home/home.component';
 import { JoinToEventComponent } from './main-panel/join-to-event/join-to-event.component';
 import { AddTokenInterceptor } from './_services/add-token.interceptor';
 import { TableEventsComponent } from './main-panel/create-event/table-events/table-events/table-events.component';
+import { AddEventComponent } from './main-panel/add-event/add-event.component';
+import { BoxAddEventComponent } from './main-panel/add-event/box-add-event/box-add-event.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { TableEventsComponent } from './main-panel/create-event/table-events/tab
     HomeComponent,
     JoinToEventComponent,
     TableEventsComponent,
+    AddEventComponent,
+    BoxAddEventComponent,
   ],
   imports: [
     BrowserModule,
