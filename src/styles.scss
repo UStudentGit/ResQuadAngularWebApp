@@ -32,7 +32,7 @@ $ResQuad-theme: mat-light-theme(
 $xs: "only screen and (max-width : 576px)";
 $sm: "only screen and (max-width : 768px)";
 $md: "only screen and (max-width : 992px)";
-$background: rgb(70, 130, 180);
+$background: transparent linear-gradient(#e8e8e8, #ababab);
 
 html {
   height: 100%;
@@ -49,4 +49,29 @@ html {
     height: 100%;
     width: 100%;
   }
+}
+
+@mixin box-style() {
+  background-color: white;
+  border: 0.1em;
+  border-style: solid;
+  border-radius: 1em;
+  border-color: #969696;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.384);
+}
+
+@mixin button {
+  justify-self: center;
+  color: white;
+  background: #486dc5;
+  border-color: #1e3cff;
+  border-style: solid;
+  border: 0.2em;
+  border-radius: 0.8em;
+  font-size: 1rem;
+  padding: 0.3em;
+
+  &:hover {
+      background: rgb(69, 93, 150);
+    }
 }
