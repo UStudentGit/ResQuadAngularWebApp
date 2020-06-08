@@ -7,6 +7,7 @@ import { CreateEventComponent } from './main-panel/create-event/create-event.com
 import { HomeComponent } from './main-panel/home/home.component';
 import { JoinToEventComponent } from './main-panel/join-to-event/join-to-event.component';
 import { AddEventComponent } from './main-panel/add-event/add-event.component';
+import { RoomsComponent } from './main-panel/rooms/rooms.component';
 
 
 
@@ -17,7 +18,8 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'createEvent', component: CreateEventComponent },
       { path: 'joinToEvent', component: JoinToEventComponent },
-      { path: 'addEvent', component: AddEventComponent }
+      { path: 'addEvent', component: AddEventComponent },
+      { path: 'rooms', component: RoomsComponent },
     ] },
   { path: 'signUp', component: SignUpComponent },
   { path: 'logIn', component: LogInComponent },

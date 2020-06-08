@@ -20,6 +20,7 @@ import { AddTokenInterceptor } from './_services/add-token.interceptor';
 import { TableEventsComponent } from './main-panel/create-event/table-events/table-events/table-events.component';
 import { AddEventComponent } from './main-panel/add-event/add-event.component';
 import { BoxAddEventComponent } from './main-panel/add-event/box-add-event/box-add-event.component';
+import { RoomsComponent } from './main-panel/rooms/rooms.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { BoxAddEventComponent } from './main-panel/add-event/box-add-event/box-a
     TableEventsComponent,
     AddEventComponent,
     BoxAddEventComponent,
+    RoomsComponent,
   ],
   imports: [
     BrowserModule,

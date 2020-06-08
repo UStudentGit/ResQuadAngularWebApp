@@ -1,0 +1,21 @@
+<div>
+  <input placeholder="Podaj id korporacji" value="1" #corpoId>
+  <button (click)="getCorpoRooms(corpoId.value)">
+    Pokaz pokoje korporacji o podanym id
+  </button>
+</div>
+
+
+<div>
+  <input placeholder="Podaj nazwe pokoju" value="136" #roomName>
+  <input placeholder="Podaj id korporacji" value="1" #corpoId2>
+  <button (click)="createRoom(roomName.value, corpoId.value)">
+    Stworz pokoj o podanej nazwie i idCorpo
+  </button>
+</div>
+
+<div>
+  <button (click)="getUser()">
+    pobierz usera
+  </button>
+</div>
