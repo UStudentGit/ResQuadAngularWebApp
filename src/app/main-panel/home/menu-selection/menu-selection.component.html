@@ -3,16 +3,23 @@
     <h1>Working?</h1>
   </div>
   <div class="menu-btn">
-    <button class="btn-event" (click)="toCreateEvent()">
-      <img src="../../../assets/plus.svg" alt="+" />
-      Nowe wydarzenie
-    </button>
-    <button class="btn-event" (click)="toJoinEvent()">
-      <img src="../../../assets/join.svg" alt="+" />
+    <button class="btn-event" [routerLink]="['/joinToEvent']">
+      <!--<img src="../../../assets/join.svg" alt="+" />-->
       Dołącz do wydarzenia
     </button>
-    <button class="btn-event" (click)="toRooms()">
-      <img src="../../../assets/join.svg" alt="+" />
+
+    <button class="btn-event" [routerLink]="['/addEvent']">
+      <!--<img src="../../../assets/plus.svg" alt="+" />-->
+      Nowe wydarzenie
+    </button>
+
+    <button class="btn-event" [routerLink]="['/myEvents']">
+      <!--<img src="../../../assets/plus.svg" alt="+" />-->
+      Moje wydarzenie
+    </button>
+
+    <button class="btn-event" [routerLink]="['/rooms']">
+      <!--<img src="../../../assets/join.svg" alt="+" />-->
       Zarządzaj pokojami
     </button>
   </div>

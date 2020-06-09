@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { MainPanelComponent } from './main-panel/main-panel.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LogInComponent } from './log-in/log-in.component';
-import { CreateEventComponent } from './main-panel/create-event/create-event.component';
+import { MyEventsComponent } from './main-panel/my-events/my-events.component';
 import { HomeComponent } from './main-panel/home/home.component';
 import { JoinToEventComponent } from './main-panel/join-to-event/join-to-event.component';
 import { AddEventComponent } from './main-panel/add-event/add-event.component';
@@ -16,7 +16,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
-      { path: 'createEvent', component: CreateEventComponent },
+      { path: 'myEvents', component: MyEventsComponent },
       { path: 'joinToEvent', component: JoinToEventComponent },
       { path: 'addEvent', component: AddEventComponent },
       { path: 'rooms', component: RoomsComponent },

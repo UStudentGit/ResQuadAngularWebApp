@@ -3,21 +3,21 @@
     <a [routerLink]="['/']">
       <img src="../../assets/logo.png" alt="LOGO" />
     </a>
-    <h1>Hi, example!</h1>
+    <h1>Hi, {{userName}}!</h1>
   </div>
 
 
+
   <div>
-    <select (change)="changeCorporation($event.target.value)" [value]="corporations[1]"><br>
+    <select (change)="updateCorporation($event.target.value)" [value]="corporations[1]"><br>
       <option *ngFor="let corporation of corporations" [value]="corporation.id">{{corporation.name}}</option>
     </select>
   </div>
 
 
 
-
   <div class="account">
-    <button class="account-image">
+    <button class=" account-image">
       <img src="../../assets/account.svg" alt="account" />
     </button>
     <div class="account-content">
@@ -25,4 +25,5 @@
       <a (click)="logout()">Logout</a>
     </div>
   </div>
+
 </div>

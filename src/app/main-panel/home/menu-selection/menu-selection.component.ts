@@ -13,16 +13,4 @@ export class MenuSelectionComponent implements OnInit {
   ngOnInit(): void {
     this.router.navigate(['home']);
   }
-
-  toCreateEvent() {
-    this.router.navigate(['createEvent']);
-  }
-
-  toJoinEvent() {
-    this.router.navigate(['joinToEvent']);
-  }
-
-  toRooms() {
-    this.router.navigate(['rooms']);
-  }
 }

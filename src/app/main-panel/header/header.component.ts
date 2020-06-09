@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { AuthorizationService } from 'src/app/_services/authorization.service';
 import { Corporation } from 'src/app/_models/corporation.model';
 import { CorporationService } from 'src/app/_services/corporation.service';
+import { User } from 'src/app/_models/user.model';
 
 @Component({
   selector: 'app-header',
@@ -10,12 +11,21 @@ import { CorporationService } from 'src/app/_services/corporation.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  userName = 'Lion';
   corporations: Array<Corporation>;
 
-  constructor(private router: Router, private auth: AuthorizationService, private corpService: CorporationService) { }
+  constructor(private router: Router, private auth: AuthorizationService, private corpService: CorporationService) {
+    this.setUserName();
+  }
 
   ngOnInit(): void {
     this.getCorporation();
+  }
+
+  setUserName() {
+    this.auth.getUser().subscribe((user: User) => {
+      this.userName = user.name;
+    });
   }
 
   getCorporation() {
@@ -25,7 +35,7 @@ export class HeaderComponent implements OnInit {
     }, error => console.log(error));
   }
 
-  changeCorporation(corpoId: number) {
+  updateCorporation(corpoId: number) {
     console.log('changeCorporation, id: ' + corpoId);
     this.corpService.updateCorporation(corpoId);
   }
