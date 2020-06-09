@@ -18,12 +18,21 @@ export class AuthorizationService {
     return localStorage.getItem('token');
   }
 
+  getUserRole() {
+    return localStorage.getItem('userRole');
+  }
+
   saveToken(token: string) {
     console.log('token: ' + token);
     localStorage.setItem('token', token);
   }
 
-  isAuthenticated(): boolean {  // in future i will use that in response.interceptor too
+  saveUserRole(userRole: string) {
+    console.log('userRole: ' + userRole);
+    localStorage.setItem('userRole', userRole);
+  }
+
+  isAuthenticated(): boolean {
     if (this.getToken() == null) {
       return false;
     }
@@ -31,10 +40,22 @@ export class AuthorizationService {
     return !this.jwtHelper.isTokenExpired(this.getToken());
   }
 
+  isAdmin(): boolean {
+    if (this.isAuthenticated() && this.getUserRole() === 'ROLE_ADMIN') {
+      return true;
+    }
+
+    return false;
+  }
+
   login(Email: string, Password: string): Observable<any> {
     return this.http.post(this.apiUrl + '/login', { email: Email, password: Password })
       .pipe(
-        tap((res: any) => this.saveToken(res.token))
+        tap((res: any) => {
+          this.saveToken(res.token);
+          console.log(res);
+          this.saveUserRole(res.role); // waiting for backend
+        })
       );
   }
 
@@ -44,6 +65,7 @@ export class AuthorizationService {
 
   logout() {
     localStorage.removeItem('token');
+    localStorage.removeItem('userRole');
   }
 
   getUser() {
