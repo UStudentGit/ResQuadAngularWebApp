@@ -21,6 +21,7 @@ import { TableEventsComponent } from './main-panel/my-events/table-events/table-
 import { AddEventComponent } from './main-panel/add-event/add-event.component';
 import { BoxAddEventComponent } from './main-panel/add-event/box-add-event/box-add-event.component';
 import { RoomsComponent } from './main-panel/rooms/rooms.component';
+import { ResponseInterceptor } from './_services/response.interceptor';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,11 @@ import { RoomsComponent } from './main-panel/rooms/rooms.component';
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AddTokenInterceptor,
+      multi: true
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ResponseInterceptor,
       multi: true
     }
   ],
