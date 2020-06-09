@@ -16,12 +16,12 @@ import { MenuSelectionComponent } from './main-panel/home/menu-selection/menu-se
 import { TableComponent } from './main-panel/home/table/table.component';
 import { HomeComponent } from './main-panel/home/home.component';
 import { JoinToEventComponent } from './main-panel/join-to-event/join-to-event.component';
-import { AddTokenInterceptor } from './_services/add-token.interceptor';
+import { AddTokenInterceptor } from './_auth/add-token.interceptor';
 import { TableEventsComponent } from './main-panel/my-events/table-events/table-events.component';
 import { AddEventComponent } from './main-panel/add-event/add-event.component';
 import { BoxAddEventComponent } from './main-panel/add-event/box-add-event/box-add-event.component';
 import { RoomsComponent } from './main-panel/rooms/rooms.component';
-import { ResponseInterceptor } from './_services/response.interceptor';
+import { ResponseInterceptor } from './_auth/response.interceptor';
 
 @NgModule({
   declarations: [

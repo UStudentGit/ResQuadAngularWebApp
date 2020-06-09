@@ -8,6 +8,7 @@ import { HomeComponent } from './main-panel/home/home.component';
 import { JoinToEventComponent } from './main-panel/join-to-event/join-to-event.component';
 import { AddEventComponent } from './main-panel/add-event/add-event.component';
 import { RoomsComponent } from './main-panel/rooms/rooms.component';
+import { AuthGuardService } from './_auth/auth-guard.service';
 
 
 
@@ -20,7 +21,9 @@ const routes: Routes = [
       { path: 'joinToEvent', component: JoinToEventComponent },
       { path: 'addEvent', component: AddEventComponent },
       { path: 'rooms', component: RoomsComponent },
-    ] },
+    ],
+    canActivate: [AuthGuardService]
+  },
   { path: 'signUp', component: SignUpComponent },
   { path: 'logIn', component: LogInComponent },
   { path: '**', redirectTo: '' }

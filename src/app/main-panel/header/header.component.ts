@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthorizationService } from 'src/app/_services/authorization.service';
+import { AuthorizationService } from 'src/app/_auth/authorization.service';
 import { Corporation } from 'src/app/_models/corporation.model';
 import { CorporationService } from 'src/app/_services/corporation.service';
 import { User } from 'src/app/_models/user.model';
