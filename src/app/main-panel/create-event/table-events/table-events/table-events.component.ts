@@ -11,6 +11,11 @@ export class TableEventsComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.getEvents();
+  }
+
+  getEvents() {
+    console.log('getEvents');
   }
 
   toAddEvent(): void {

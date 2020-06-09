@@ -21,4 +21,8 @@ export class MenuSelectionComponent implements OnInit {
   toJoinEvent() {
     this.router.navigate(['joinToEvent']);
   }
+
+  toRooms() {
+    this.router.navigate(['rooms']);
+  }
 }

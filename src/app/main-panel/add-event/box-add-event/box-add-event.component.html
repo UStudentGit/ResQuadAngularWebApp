@@ -8,12 +8,6 @@
             <label for="category">Kod</label> <br>
             <input type="text" id="name" [(ngModel)]="code"><br>
 
-            <label for="group">Organizacja</label><br>
-            <select name="group" id="group" (change)="getRooms($event.target.value)"><br>
-                <option *ngFor="let corporation of corporations" [value]="corporation.id">{{corporation.name}}</option>
-
-            </select><br>
-
             <label for="group">Pokój</label><br>
             <select name="group" id="group" [(ngModel)]="roomId"><br>
                 <option *ngFor="let room of rooms" [value]="room.roomId">{{room.name}}</option>

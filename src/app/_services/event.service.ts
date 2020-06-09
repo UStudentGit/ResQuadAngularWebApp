@@ -13,4 +13,6 @@ export class EventService {
   createEvent(EventName: string, Code: string, RoomId: number) {
     return this.http.post(this.apiUrl + '/event', { name: EventName, password: Code, roomId: RoomId });
   }
+
+
 }

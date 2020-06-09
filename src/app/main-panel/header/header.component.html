@@ -8,7 +8,9 @@
 
 
   <div>
-    <a style="font-size: 30px; color: red;" [routerLink]="['/rooms']">Rooms</a>
+    <select (change)="changeCorporation($event.target.value)" [value]="corporations[1]"><br>
+      <option *ngFor="let corporation of corporations" [value]="corporation.id">{{corporation.name}}</option>
+    </select>
   </div>
 
 
