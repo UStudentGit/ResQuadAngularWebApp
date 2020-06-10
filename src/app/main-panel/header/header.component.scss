@@ -1,5 +1,6 @@
 .header{
   display: flex;
+  align-items: baseline;
   margin: 0 0 0 0;
   flex-direction: row;
   justify-content: space-between;
@@ -76,3 +77,20 @@ filter: drop-shadow(2px 2px 2px black);
   text-decoration: none;
   cursor: pointer;
 }
+
+.header>.sel{
+  width: 40%;
+  height: 2.5em;
+}
+select{
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5em;
+  padding-left: 1em;
+  -webkit-appearance:none;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #fff;
+  background-position-x: 97%;
+  outline: none;
+}
+
+

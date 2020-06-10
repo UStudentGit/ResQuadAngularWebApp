@@ -8,7 +8,7 @@
 
 
 
-  <div>
+  <div class="sel">
     <select (change)="updateCorporation($event.target.value)" [value]="corporations[1]"><br>
       <option *ngFor="let corporation of corporations" [value]="corporation.id">{{corporation.name}}</option>
     </select>
