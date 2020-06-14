@@ -14,7 +14,16 @@
   border-radius: 0.5em;
   border-color: rgb(150, 150, 150);
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.384);
-
+  .dropdown {
+    display: block;
+    .btn {
+      margin-bottom: 0.2em;
+    }
+  }
+  .btn-full {
+    margin: auto;
+    width: 100%;
+  }
   .menu-btn {
     align-self: center;
     width: 100%;
