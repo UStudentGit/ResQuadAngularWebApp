@@ -1,15 +1,17 @@
+import { Room } from './room.model';
+
 export class Happening {
   name: string;
+  id: number;
   ownerId: number;
-  eventId: number;
   code: string;
-  roomId: number;
+  room: Room;
 
-  constructor(name: string, ownerId: number, eventId: number, code: string, roomId: number) {
+  constructor(name: string, id: number, ownerId: number, code: string, room: Room) {
     this.name = name;
     this.ownerId = ownerId;
-    this.eventId = eventId;
+    this.id = id;
     this.code = code;
-    this.roomId = roomId;
+    this.room = room;
   }
 }

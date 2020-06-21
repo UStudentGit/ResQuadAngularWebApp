@@ -19,3 +19,43 @@
     pobierz usera
   </button>
 </div>
+
+<div>
+  <button (click)="getUserEvents()">
+    pobierz wydarzenia usera
+  </button>
+</div>
+
+<div>
+  <button (click)="getAdminEvents()">
+    pobierz wydarzenia admina
+  </button>
+</div>
+
+<div>
+  <button (click)="getAllEvents()">
+    pobierz wszystkie wydarzenia
+  </button>
+</div>
+
+<div>
+  <button (click)="getUserAttendanceList()">
+    pobierz listy obecności usera
+  </button>
+</div>
+
+<div>
+  <input placeholder="Podaj id wydarzenia"  #eventId>
+  <button (click)="getAttendanceList(eventId.value)">
+    pobierz liste obecności wydarzenia o podanym id
+  </button>
+</div>
+
+
+<div>
+  <input placeholder="Podaj id wydarzenia" #eventId>
+  <input placeholder="wymysl nazwe listy"  #name>
+  <button (click)="createAttendanceList(eventId.value, name.value)">
+    stworz liste obecnosci, podaj tylko id wydarzenia i nazwe, daty sa juz ustalone
+  </button>
+</div>

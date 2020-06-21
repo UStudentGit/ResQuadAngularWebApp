@@ -1,24 +1,19 @@
 <div class="table-events">
-    
+
     <div class="container">
         <table>
             <thead>
-                <tr><th></th><th>Wydarzenia</th><th>Data dołączenia</th><th>Usuń</th></tr>
+                <tr><th></th><th>Wydarzenia</th><th>Nazwa pokoju</th><th>Nazwa korporacji</th><th>Usuń</th></tr>
             </thead>
             <tbody>
-                <tr>
+                <tr *ngFor="let happening of adminHappenings">
                     <td><input type="checkbox" class="checkboxes" checked></td>
-                    <td>PETC</td>
-                    <td>2020.03.05</td>
+                    <td>{{happening.name}}</td>
+                    <td>{{happening.room.name}}</td>
+                    <td>{{happening.room.corporation.id}}</td>
                     <td><button class="btn"><i class="fa fa-trash"></i></button></td>
                 </tr>
-                <tr>
-                    <td><input type="checkbox" class="checkboxes" checked></td>
-                    <td>Obiektowe bazy danych</td>
-                    <td>2020.04.08</td>
-                    <td><button class="btn"><i class="fa fa-trash"></i></button></td>
-                </tr>
-            </tbody>    
+            </tbody>
         </table>
     </div>
 

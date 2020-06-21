@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { EventService } from 'src/app/_services/event.service';
+import { Happening } from 'src/app/_models/happening.model';
 
 @Component({
   selector: 'app-table-events',
@@ -8,16 +9,19 @@ import { EventService } from 'src/app/_services/event.service';
   styleUrls: ['./table-events.component.scss']
 })
 export class TableEventsComponent implements OnInit {
+  adminHappenings: Array<Happening>;
 
   constructor(private router: Router, private eventService: EventService) { }
 
   ngOnInit(): void {
-    this.getEvents();
-    this.eventService.getEvents().subscribe(res => console.log(res));
+    this.getAdminEvents();
   }
 
-  getEvents() {
-    console.log('getEvents');
+  getAdminEvents() {
+    this.eventService.getAdminEvents().subscribe((happenings: Array<Happening>) => {
+      console.log(happenings);
+      this.adminHappenings = happenings;
+    });
   }
 
   toAddEvent(): void {

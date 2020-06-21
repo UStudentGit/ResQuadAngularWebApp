@@ -1,7 +1,6 @@
 <div class="menu-selection">
   <div class="dropdown">
-    <button class="btn-full btn-outline-info btn">PEITC</button>
-    <button class="btn-full btn-outline-info btn">XD</button>
+    <button class="btn-full btn-outline-info btn" *ngFor="let happening of happenings">{{happening.name}}</button>
   </div>
   <div class="menu-btn">
     <button class="btn-event" [routerLink]="['/joinToEvent']">

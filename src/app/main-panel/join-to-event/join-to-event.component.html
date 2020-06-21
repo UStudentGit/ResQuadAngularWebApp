@@ -1,8 +1,8 @@
 <div class="con">
   <div class="box">
     <div class="code">
-      <input placeholder="Your event code">
-      <button>Dołącz</button>
+      <input placeholder="Your event code" #code>
+      <button (click)="joinToEvent(code.value)">Dołącz</button>
     </div>
     <div class="events">
       <table>

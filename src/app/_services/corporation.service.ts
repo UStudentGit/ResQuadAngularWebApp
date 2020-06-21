@@ -2,14 +2,14 @@ import { Injectable, OnDestroy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, tap } from 'rxjs/operators';
 import { Corporation } from '../_models/corporation.model';
-import { BehaviorSubject, Observable, Subject } from 'rxjs';
+import { BehaviorSubject, Observable, Subject, ReplaySubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CorporationService {
   apiUrl = 'http://whcp.pl:3200';
-  chosenCorpoId = new Subject<number>();
+  chosenCorpoId = new ReplaySubject<number>();
 
   constructor(private http: HttpClient) { }
 

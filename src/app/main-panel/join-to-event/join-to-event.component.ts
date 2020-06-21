@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EventService } from 'src/app/_services/event.service';
 
 @Component({
   selector: 'app-join-to-event',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JoinToEventComponent implements OnInit {
 
-  constructor() { }
+  constructor(private eventService: EventService) { }
 
   ngOnInit(): void {
   }
 
+  joinToEvent(code: any) {
+    console.log(code);
+    this.eventService.joinToEvent(code).subscribe(res => console.log(res));
+  }
 }

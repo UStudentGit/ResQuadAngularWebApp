@@ -1,11 +1,15 @@
+import { Corporation } from './corporation.model';
+
 export class Room {
   name: string;
   corporationId: number;
   roomId: number;
+  corporation: Corporation;
 
-  constructor(name: string, corporationId: number, roomId?: number) {
+
+  constructor(name: string, roomId: number, corporation: Corporation) {
     this.name = name;
-    this.corporationId = corporationId;
     this.roomId = roomId;
+    this.corporation = corporation;
   }
 }
