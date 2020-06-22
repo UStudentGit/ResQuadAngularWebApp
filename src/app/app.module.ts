@@ -22,6 +22,7 @@ import { AddEventComponent } from './main-panel/add-event/add-event.component';
 import { BoxAddEventComponent } from './main-panel/add-event/box-add-event/box-add-event.component';
 import { RoomsComponent } from './main-panel/rooms/rooms.component';
 import { ResponseInterceptor } from './_auth/response.interceptor';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -46,19 +47,20 @@ import { ResponseInterceptor } from './_auth/response.interceptor';
     BrowserAnimationsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatSnackBarModule,
   ],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AddTokenInterceptor,
-      multi: true
+      multi: true,
     },
     {
       provide: HTTP_INTERCEPTORS,
       useClass: ResponseInterceptor,
-      multi: true
-    }
+      multi: true,
+    },
   ],
   bootstrap: [AppComponent],
 })
