@@ -1,24 +1,24 @@
-.header{
+.header {
   display: flex;
   align-items: baseline;
   margin: 0 0 0 0;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  background:linear-gradient(#486DC5,#375495);
+  background: linear-gradient(#486dc5, #375495);
 }
-.header .logo{
+.header .logo {
   display: flex;
   flex-direction: row;
 }
-.header .logo>a >img{
+.header .logo > a > img {
   width: 5em;
   height: 5em;
   margin: 1em 1em 1em 1em;
   -webkit-filter: drop-shadow(5px 5px 5px white);
   filter: drop-shadow(3px 3px 5px white);
 }
-.header .logo >h1{
+.header .logo > h1 {
   font-size: 2em;
   color: white;
   margin: 1em;
@@ -28,73 +28,77 @@
 }
 .account {
   display: inline;
-  align-self: center;
   margin-right: 3em;
-  position:relative;
+  padding: 1em;
 }
-.account .account-content{
-  max-width: 30em;
-  width: 18em;
+.account .account-content {
+  position: absolute;
+  width: 14em;
   display: none;
   align-self: center;
   margin-top: 0.5em;
-  padding: 0.5em 0.5em 0.5em 0.5em;
-  background: transparent;
+  margin-left: -10em;
+  padding: 0.5em;
+  background: white;
   border-radius: 0.5em;
-  min-width: 160px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
   z-index: 2;
 }
-.account:hover .account-content{
+.account:hover .account-content {
   display: flex;
   transition: 0.5s;
-  flex-direction: row;
+  flex-direction: column;
 }
-.account >button{
+.account > button {
   background: transparent;
   border: none;
 }
-.account button>img{
+.account button > img {
   height: 2em;
   -webkit-filter: drop-shadow(3px 3px 3px black);
-filter: drop-shadow(2px 2px 2px black);
+  filter: drop-shadow(2px 2px 2px black);
 }
-.account-content>button{
-  padding:0.5em;
-  margin:0.2em;
+.account-content > button {
+  padding: 0.5em;
+  margin: 0.2em;
   background: #375495;
   border: none;
   color: white;
   font-size: 1em;
-  box-shadow:3px 3px 3px rgba(0,0,0,0.2);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
-.account-content>a{
-  padding:0.5em;
-  margin:0.2em;
+.account-content > a {
+  padding: 0.5em;
+  text-align: center;
+  width: 95%;
+  margin: 0.2em;
   background: #375495;
   border: none;
   color: white;
-  font-size: 1em;
-  box-shadow:3px 3px 3px rgba(0,0,0,0.2);
+  font-size: 1.2em;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   text-decoration: none;
+  border-radius: 0.2em;
   cursor: pointer;
 }
-
-#sels{
-  width: 9em;
-  padding-left: 0.3em; 
-  margin-right: -8em;
-
+.account-content > a > div {
+  margin-top: 0.5em;
 }
 
-select{
+#sels {
+  width: 9em;
+  padding-left: 0.3em;
+  margin-right: -8em;
+}
+
+select {
   width: 100%;
   height: 100%;
   border-radius: 0.5em;
   padding-left: 1em;
-  -webkit-appearance:none;
-  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #fff;
+  -webkit-appearance: none;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png)
+    no-repeat right #fff;
   background-position-x: 97%;
   outline: none;
 }
-
-

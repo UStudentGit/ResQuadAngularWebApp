@@ -39,7 +39,7 @@ export class BoxAddEventComponent implements OnInit, OnDestroy {
       });
   }
   openSnackBar(message: string) {
-    this.snackBar.open('Something go wrong!', 'OK', {
+    this.snackBar.open(message, 'OK', {
       duration: 5000,
     });
   }
