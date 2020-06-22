@@ -33,7 +33,8 @@
   position:relative;
 }
 .account .account-content{
-  max-width: 12em;
+  max-width: 30em;
+  width: 18em;
   display: none;
   align-self: center;
   margin-top: 0.5em;
@@ -78,10 +79,13 @@ filter: drop-shadow(2px 2px 2px black);
   cursor: pointer;
 }
 
-.header>.sel{
-  width: 40%;
-  height: 2.5em;
+#sels{
+  width: 9em;
+  padding-left: 0.3em; 
+  margin-right: -8em;
+
 }
+
 select{
   width: 100%;
   height: 100%;
